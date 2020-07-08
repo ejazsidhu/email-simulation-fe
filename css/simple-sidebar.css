@@ -1,0 +1,133 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+
+/* custome table code */
+
+table{
+  width: 100%;
+  border-spacing: 0 1em;
+  border-collapse:separate !important ;
+}
+tr{
+  background: white;
+  height: 45px;
+}
+
+
+.w-50{
+  width: 50% !important;
+  padding: 0 10px;
+}
+
+.w-5{
+  width: 5% !important;
+  text-align: center;
+  
+}
+
+#page-content-wrapper{
+background: #F4F8FB;
+}
+
+.pagination{
+  justify-content: flex-end !important;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-bottom-color: #f00; /* Red */
+}
+
+
+/* modal classes */
+
+.modal-header {
+  border: none !important;
+  padding: 0rem 0.5rem !important
+  ;
+}
+.modal-footer{
+  border: none !important;
+  /* padding: 0rem 0.5rem !important */
+  ;
+}
+.modal-body{
+  padding: 0rem 2rem !important;
+}
+
+form{
+  font-size: 12px !important;
+}
+#input-btn{
+
+    background: #007bff;
+    color: white;
+
+}
+.success-color{
+  background-color: green;
+  color: white;
+}
+.image-upload{
+  border: 1px solid #ced4da;
+  min-height: 20px !important;
+  border-radius: .25rem;
+}
+.image-upload>input {
+  /* display: none; */
+}
+.listing-box{
+  height: 115px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}

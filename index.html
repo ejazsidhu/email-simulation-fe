@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="row nav-row">
+    <div class="col-12">
+      <!-- Nav tabs -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Admin panel</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Admin panel <span class="sr-only">(current)</span></a>
+                </li> -->
+
+            <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li> -->
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+      </nav>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      </div>
+
+      <script>
+        $('#navId a').click(e => {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-align-justify" aria-hidden="true"></i>
+          Dashboard
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+          Simulations</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          Email Templates</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-user-secret" aria-hidden="true"></i>
+          Assessors</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          Participants</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-fax" aria-hidden="true"></i>
+          Reports</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-6">
+            <h4>Simulations</h4>
+          </div>
+          <div class="col-6 text-right">
+            <button class="btn btn-primary btn-sm">
+              Add Simulation
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <table class="custom-table">
+              <!-- <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning"  >
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    simulation 1
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">Enable</button>
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-info">
+                      <i class="fa fa-repeat"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button data-toggle="tooltip" data-placement="top" title="view report" class="btn btn-sm btn-warning">
+                      <i class="fa fa-file-text"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-success">
+                      <i class="fa fa-pencil"></i>
+
+                    </button>
+
+                  </td>
+                  <td class="w-5">
+                    <button class="btn btn-sm btn-danger">
+                      <i class="fa fa-trash"></i>
+
+                    </button>
+
+                  </td>
+                </tr>
+
+
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-right">
+            <nav aria-label="...">
+              <ul class="pagination ">
+                <li class="page-item disabled">
+                  <span class="page-link">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <span class="page-link">
+                    2
+                    <span class="sr-only">(current)</span>
+                  </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
+
+</body>
+
+</html>
