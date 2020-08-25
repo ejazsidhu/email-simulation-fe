@@ -13,9 +13,9 @@
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
   <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+   <link href="css/simple-sidebar.css" rel="stylesheet">
      <link href="css/custom.css" rel="stylesheet">
 
 </head>
@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <div class="d-flex" id="wrapper">
+  <div class="d-flex bg-white" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
@@ -161,7 +161,7 @@
           <div class="email-wrapper wrapper">
             <div class="row align-items-stretch">
               
-              <div class="mail-list-container col-md-3 pt-4 pb-4 border-right bg-white">
+              <div class="mail-list-container col-md-3 pt-4 pb-4 border-right bg-white custom-scrollbar-css par_sc">
                 
                 <div class="mail-list">
                   
@@ -291,7 +291,7 @@
           
                 
               </div>
-              <div class="mail-view d-md-block col-md-9 col-lg-7 bg-white">
+              <div class="mail-view d-md-block col-md-9 col-lg-7 bg-white custom-scrollbar-css par_sc">
                 <div class="row">
                   <!-- <div class="col-md-12 mb-4 mt-4">
                     <div class="btn-toolbar">
@@ -312,16 +312,15 @@
                     <img class="img-sm rounded-circle mr-3" src="http://www.urbanui.com/dashflat/template/images/faces/face11.jpg" alt="">
                     <div class="details">
                       <p class="msg-subject">
-                        Weekly Update - Week 19 (May 8, 2017 - May 14, 2017)
+                        Peri Li <br>
+                        May 8 2017
                       </p>
-                      <p class="sender-email">
-                        Sarah Graves
-                        <a href="#">itsmesarah268@gmail.com</a>
-                        &nbsp;<i class="mdi mdi-account-multiple-plus"></i>
-                      </p>
+                      
+                      
                     </div>
                   </div>
                   <div class="message-content">
+                   <div class="subject_d"><b>Subject:</b> Hello here</div>
                     <p>Hi Emily,</p>
                     <p>This week has been a great week and the team is right on schedule with the set deadline. The team has made great progress and achievements this week. At the current rate we will be able to deliver the product right on time and meet the quality that is expected of us. Attached are the seminar report held this week by our team and the final product design that needs your approval at the earliest.</p>
                     <p>For the coming week the highest priority is given to the development for <a href="http://www.urbanui.com/" target="_blank">http://www.urbanui.com/</a> once the design is approved and necessary improvements are made.</p>
@@ -511,6 +510,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="vendor/scroll/scroll.js"></script>
 
   <!-- Menu Toggle Script -->
   <script>
@@ -522,6 +522,35 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+	
+	
+	$(function() {
+  /* Rounded Dots Dark */
+  $("#content-1").mCustomScrollbar({
+    theme: "rounded-dots-dark"
+  });
+
+  /* Rounded Dark */
+  $("#content-2").mCustomScrollbar({
+    theme: "rounded-dark"
+  });
+
+  /* Inset Dark */
+  $("#content-3").mCustomScrollbar({
+    theme: "inset-3-dark"
+  });
+
+  /* 3d Dark */
+  $("#content-4").mCustomScrollbar({
+    theme: "3d-dark"
+  });
+
+  /* Dark Thin */
+  $("#content-5").mCustomScrollbar({
+    theme: "dark-thin"
+  });
+});
+
   </script>
 
 </body>
