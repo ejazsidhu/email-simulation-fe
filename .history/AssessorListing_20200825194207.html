@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+ <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="row nav-row">
+    <div class="col-12">
+      <!-- Nav tabs -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Admin panel</a>
+        
+      <ul class="navbar-nav ml-auto top_right">
+
+      
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1 mt10">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in w300" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fa fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+          
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                <img class="img-profile rounded-circle" src="img/img.png" width="30">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fa fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+      </nav>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      </div>
+
+      <script>
+        $('#navId a').click(e => {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+      </script>
+    </div>
+  </div>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-align-justify" aria-hidden="true"></i>
+          Dashboard
+        </a>
+        <a href="/SimulationsList.html" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-snowflake-o" aria-hidden="true"></i>
+          Simulations</a>
+        <a href="/emailTemplate.html" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          Email Templates</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-user-secret" aria-hidden="true"></i>
+          Assessors</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          Participants</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-fax" aria-hidden="true"></i>
+          Reports</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-6">
+            <h4>Assessors</h4>
+          </div>
+          <div class="col-6 text-right">
+            <!-- <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#emailNotificationCenter">
+              Send Email
+            </button> -->
+            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addEmailTemplate">
+              Add Assessor
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 table_cls">
+            <table class="custom-table">
+              <!-- <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td scope="row" class="w-50">
+                    Subject Name 1
+                  </td>
+                  <td class="w-5" >
+                    <span class="b1" data-toggle="tooltip" data-placement="top" title="view report">
+                      <i class="fa fa-envelope"></i>
+                   </span>
+                    
+
+                  </td>
+                 
+                 
+                  <td class="w-5">
+                    <span class="b1" data-toggle="tooltip" data-placement="top" title="edit">
+                      <i class="fa fa-pencil" data-toggle="modal" data-target="#addEmailTemplate"></i>
+                    </span>
+
+                  </td>
+                  <td class="w-5">
+                    <span class="b1"  data-toggle="tooltip" data-placement="top" title="edit">
+                      <i class="fa fa-trash" data-toggle="modal" data-target="#deleteModalCenter"></i>
+
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" class="w-50">
+                    Subject Name 1
+                  </td>
+                  <td class="w-5" >
+                    <span class="b1" data-toggle="tooltip" data-placement="top" title="view report">
+                      <i class="fa fa-envelope"></i>
+                   </span>
+                    
+
+                  </td>
+              
+               
+                  <td class="w-5">
+                    <span class="b1" data-toggle="tooltip" data-placement="top" title="edit">
+                      <i class="fa fa-pencil" data-toggle="modal" data-target="#addEmailTemplate"></i>
+                    </span>
+
+                  </td>
+                  <td class="w-5">
+                    <span class="b1"  data-toggle="tooltip" data-placement="top" title="edit">
+                      <i class="fa fa-trash" data-toggle="modal" data-target="#deleteModalCenter"></i>
+
+                    </span>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-right">
+            <nav aria-label="...">
+              <ul class="pagination ">
+                <li class="page-item disabled">
+                  <span class="page-link">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <span class="page-link">
+                    2
+                    <span class="sr-only">(current)</span>
+                  </span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+    <!-- delete modal -->
+
+    <div class="modal fade" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="    padding: 1rem 2rem !important;">
+            <h5 class="modal-title" id="deleteModalLongTitle">Delete item</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mt-2 mb-2">
+                <strong>
+                  Do you want to delte this item?
+                </strong>
+                <br>
+                <small>
+                  *Note:Deleting this entry will remove this reffernce from all over app.
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-12">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger btn-sm">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- email sent  notification modal -->
+    <div class="modal fade" id="emailNotificationCenter" tabindex="-1" role="dialog"
+      aria-labelledby="emailNotificationCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 text-center">
+                <i class="fa fa-check-circle fa-3x " style="color:#28a745" aria-hidden="true"></i>
+              </div>
+              <div class="col-12 text-center">
+                <p>
+                  <strong>
+                    Email sent successfully!
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+        <!-- add simulation modal -->
+        <div class="modal fade custom-modal" id="addSimulationTemplate" tabindex="-1" role="dialog"
+        aria-labelledby="addSimulationTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+          <div class="modal-content modal-md">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+              <div class="row">
+                <div class="col ">
+                  <h5 class="modal-title" id="addSimulationLongTitle">Add Simulation</h5>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="name">
+                      <strong>
+                        Simulation Name
+                      </strong>
+                    </label>
+                    <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Simulation Name">
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-1">
+                <div class="col-12">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Add Participant / Assign Assessor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                       href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Add Email Template</a>
+                    </li>
+                   
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                  </div>
+                </div>
+                <div class="col">
+                 
+
+                   
+
+                    <div class="row">
+                     
+                      <div class="col-5 pr-0">
+                        <label for="participant">
+                          <strong>
+                            Add Participants 
+                          </strong>
+                        </label>
+                        <select class="form-control form-control-sm">
+                          <option>Small select</option>
+                        </select>
+                      </div>
+                      <div class="col-5 pr-0">
+                        <label for="assessor">
+                          <strong>
+                        Assign Assessor
+                          </strong>
+                        </label>
+                        <select class="form-control form-control-sm">
+                          <option>Small select</option>
+                        </select>
+                      </div>
+
+                      <div class="col-2 mt-4">
+                        <button class="btn btn-primary btn-sm">Add</button>
+                      </div>
+                     
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-12 ">
+                        <div class="listing-box">
+
+                        </div>
+                     
+                      </div>
+                    </div>
+
+                    <div class="row mt-2">
+                     
+                      <div class="col-6 pr-0">
+                        <label for="addEmailEemplate">
+                          <strong>
+                            Add Email Template
+                          </strong>
+                        </label>
+                        <select class="form-control form-control-sm">
+                          <option>Time</option>
+                        </select>
+                      </div>
+                      <div class="col-4 pr-0">
+                        <label for="addEmailEemplate">
+                          <strong>
+                            Add Relative time
+                          </strong>
+                        </label>
+                        <input type="time" name="relativeTime" class="form-control form-control-sm">
+                         
+                      </div>
+                    
+
+                      <div class="col-1 mt-4">
+                        
+                        <button class="btn btn-primary btn-sm">Add</button>
+                      </div>
+                      <div class="col-12">
+                      
+                      </div>
+                    </div>
+                    <div class="row mt-1">
+                      <div class="col-12 ">
+                        <div class="listing-box">
+
+                        </div>
+                     
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <div class="row">
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- add email modal -->
+       <div class="modal fade custom-modal" id="addEmailTemplate" tabindex="-1" role="dialog"
+       aria-labelledby="addEmailTemplateTitle" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+         <div class="modal-content modal-md">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <div class="row">
+               <div class="col ">
+                 <h5 class="modal-title" id="emailModalLongTitle">Add Email Template</h5>
+
+               </div>
+             </div>
+             <div class="row mt-2">
+               <div class="col">
+                 <form>
+
+                   <div class="form-group">
+                     <label for="name">Sender's Name</label>
+                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                   </div>
+                   <div class="form-group">
+                     <label for="email">Sender's Email</label>
+                     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                       placeholder="Email">
+                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                       else.</small> -->
+                   </div>
+                   <div class="form-group">
+                     <label for="name">Subject</label>
+                     <input type="text" class="form-control" id="subject" name="subjet" placeholder="Subject">
+                   </div>
+
+                   <div class="form-group">
+                     <label for="textarea">Example textarea</label>
+                     <textarea class="form-control" id="textarea" rows="3"></textarea>
+
+
+                     <div class="image-upload">
+                       <label for="file-input">
+                         <i class="fa fa-paperclip fa-2x" aria-hidden="true"></i>
+                       </label>
+
+                       <input id="file-input" type="file" multiple />
+                     </div>
+
+
+                   </div>
+
+
+
+                 </form>
+               </div>
+             </div>
+           </div>
+           <div class="modal-footer">
+             <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+             <div class="row">
+               <div class="col-12">
+                 <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+       <!-- add asessor Modal -->
+       <div class="modal fade custom-modal" id="addAssessor" tabindex="-1" role="dialog"
+       aria-labelledby="addAssessorTitle" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+         <div class="modal-content modal-sm">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div class="modal-body">
+             <div class="row">
+               <div class="col ">
+                 <h5 class="modal-title" id="exampleModalLongTitle">Add Accessor</h5>
+
+               </div>
+             </div>
+             <div class="row">
+               <div class="col">
+                 <form>
+
+                   <div class="form-group">
+                     <label for="name">Assessor's Name</label>
+                     <input type="text" class="form-control" id="name" name="name" placeholder="Naame">
+                   </div>
+                   <div class="form-group">
+                     <label for="email">Assessor's Email</label>
+                     <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                       placeholder="Enter email">
+                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                       else.</small> -->
+                   </div>
+                   <div class="input-group mb-3">
+
+                     <input type="password" class="form-control" name="password"
+                       aria-label="Amount (to the nearest dollar)">
+                     <div class="input-group-append">
+                       <span class="input-group-text" id="input-btn"><i class="fa fa-refresh" aria-hidden="true"></i>
+                       </span>
+                     </div>
+                   </div>
+
+                 </form>
+               </div>
+             </div>
+           </div>
+           <div class="modal-footer">
+             <div class="row">
+               <div class="col-12">
+                 <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                 <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+</body>
+
+</html>
