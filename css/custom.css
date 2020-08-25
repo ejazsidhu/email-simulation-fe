@@ -413,3 +413,7 @@ body{ overflow-x: hidden;}
       height: calc(1.5em + 0.35rem + 2px) !important;
 
     }
+
+    .nav-pills .nav-link{
+      border: 1px solid lightgray !important;
+    }
