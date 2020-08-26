@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
   <!-- Custom styles for this template -->
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link href="css/simple-sidebar.css" rel="stylesheet">
  <link href="css/custom.css" rel="stylesheet">
 </head>
@@ -400,30 +401,26 @@
     </div>
     
         <!-- add simulation modal -->
-        <div class="modal fade custom-modal" id="addSimulationTemplate" tabindex="-1" role="dialog"
+        <div class="modal fade custom-modal add_sim" id="addSimulationTemplate" tabindex="-1" role="dialog"
         aria-labelledby="addSimulationTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
-          <div class="modal-content modal-md">
+        <div class="modal-dialog modal-dialog-centered justify-content-center modal-lg" role="document">
+          <div class="modal-content ">
             <div class="modal-header">
+               <h5 class="modal-title" id="addSimulationLongTitle">Add Simulation</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <form>
-              <div class="row">
-                <div class="col ">
-                  <h5 class="modal-title" id="addSimulationLongTitle">Add Simulation</h5>
-
-                </div>
-              </div>
+      
               <div class="row">
                 <div class="col-12">
                   <div class="form-group">
                     <label for="name">
-                      <strong>
+                      
                         Simulation Name
-                      </strong>
+                     
                     </label>
                     <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Simulation Name">
                   </div>
@@ -444,7 +441,7 @@
                   </ul>
                   <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                      <div class="row">
+                      <div class="row par_list">
                      
                         <div class="col-5 pr-0">
                           <label for="participant">
@@ -470,20 +467,287 @@
                         <div class="col-2 mt-4">
                           <button class="btn btn-primary btn-sm">Add</button>
                         </div>
+                        
+                        
+                         <div class="col-12">
+                         <div class="listbox2 custom-scrollbar-css">
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-6">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-6">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         </div>
+                         </div>
+                      
                        
                       </div>
-                      <div class="row mt-1">
-                        <div class="col-12 ">
-                          <div class="listing-box">
-  
-                          </div>
-                       
-                        </div>
-                      </div>
+                      
+                     
   
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                      <div class="row mt-2">
+                      <div class="row mt-2 par_list2">
                      
                         <div class="col-4 pr-0">
                           <label for="addEmailEemplate">
@@ -521,21 +785,269 @@
                           <button class="btn btn-primary btn-sm">Add</button>
                         </div>
                         <div class="col-12">
-                        
+                        <div class="listbox3 custom-scrollbar-css">
+                          <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         <div class="row list2_2">
+                         
+                            <div class="col-5">
+                            <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            <div class="col-5">
+                               <select class="form-control form-control-sm">
+                            <option>option</option>
+                          </select>
+                            </div>
+                            
+                             <div class="col-2 tcenter">
+                               <input type="text" class="form-control-sm" placeholder="10s">
+                            </div>
+                            
+                            <div class="opt_list">
+                               <i class="fa fa-trash"></i>
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            
+                         </div>
+                         
+                         </div>
                         </div>
                       </div>
-                      <div class="row mt-1">
-                        <div class="col-12 ">
-                          <div class="listing-box">
-  
-                          </div>
-                       
-                        </div>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
-                <div class="col">
+               </div>
                  
 
                    
@@ -544,9 +1056,8 @@
                     
                   </form>
                 </div>
-              </div>
-            </div>
-            <div class="modal-footer">
+                
+                <div class="modal-footer">
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
               <div class="row">
                 <div class="col-12">
@@ -554,16 +1065,15 @@
                 </div>
               </div>
             </div>
+              </div>
+            
+            
           </div>
         </div>
-      </div>
-
-  </div>
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
+    <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="vendor/scroll/scroll.js"></script>
 
   <!-- Menu Toggle Script -->
   <script>
@@ -575,6 +1085,35 @@
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+	
+	
+	$(function() {
+  /* Rounded Dots Dark */
+  $("#content-1").mCustomScrollbar({
+    theme: "rounded-dots-dark"
+  });
+
+  /* Rounded Dark */
+  $("#content-2").mCustomScrollbar({
+    theme: "rounded-dark"
+  });
+
+  /* Inset Dark */
+  $("#content-3").mCustomScrollbar({
+    theme: "inset-3-dark"
+  });
+
+  /* 3d Dark */
+  $("#content-4").mCustomScrollbar({
+    theme: "3d-dark"
+  });
+
+  /* Dark Thin */
+  $("#content-5").mCustomScrollbar({
+    theme: "dark-thin"
+  });
+});
+
   </script>
 
 </body>
