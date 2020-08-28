@@ -145,8 +145,4 @@ color: #29A88C;
 .fa-trash:hover{
   color: #E81742;
 }
-.fa{
-  color: #8C99A0;
-  cursor: pointer;
-  padding-left: 20px !important;
-}
+

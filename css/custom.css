@@ -281,8 +281,8 @@ body{ overflow-x: hidden;}
   white-space: nowrap;
 }
 
-.sender-details .img-sm {    width: 60px;
-    height: 60px;}
+.sender-details .img-sm {    width: 50px;
+    height: 50px;}
 	.subject_ms { margin:0; font-size:14px;}
 .subject_ms span{     float: right;
     font-size: 12px;
@@ -318,7 +318,6 @@ body{ overflow-x: hidden;}
 /* Message Content */
 .email-wrapper .message-body .sender-details {
   padding: 20px 15px 0;
-  border-bottom: 1px solid #e9e9e9;
   display: -webkit-flex;
   display: flex;
 }
@@ -328,7 +327,7 @@ body{ overflow-x: hidden;}
 }
 
 .email-wrapper .message-body .sender-details .details .msg-subject {
-  font-weight: 600;    margin: 0;
+  font-weight: 400;    margin: 0;
 }
 
 .email-wrapper .message-body .sender-details .details .sender-email {
@@ -343,7 +342,9 @@ body{ overflow-x: hidden;}
 }
 
 .email-wrapper .message-body .message-content {
-  padding: 50px 15px;
+ 
+    padding: 11px 8px 0 91px;
+
 }
 
 .email-wrapper .message-body .attachments-sections ul {
@@ -353,10 +354,11 @@ body{ overflow-x: hidden;}
 }
 
 .email-wrapper .message-body .attachments-sections ul li {
-  padding: 10px;
-  margin-right: 20px;
-  border: 1px solid #e9e9e9;
-  border-radius: 5px;     max-width: 200px;
+
+    margin-right: 20px;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    width:170px;
     display: inline-block;
 }
 
@@ -366,9 +368,14 @@ body{ overflow-x: hidden;}
 }
 
 .email-wrapper .message-body .attachments-sections ul li .thumb i {
-  font-size: 30px;
-  margin: 0;
-  color: #2e383e;
+font-size: 30px;
+    margin: 0;
+    color: #2e383e;
+    padding: 0 !important;
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .email-wrapper .message-body .attachments-sections ul li .details p.file-name {
@@ -407,10 +414,12 @@ body{ overflow-x: hidden;}
   
     
     .modal-sm{
-      min-width:350px !important
+      min-width:400px !important
     }
     .form-control{
-      height: calc(1.5em + 0.35rem + 2px) !important;
+          height: 37px;
+    font-size: 14px;
+
 
     }
 
@@ -525,6 +534,77 @@ body{ overflow-x: hidden;}
     text-align: center;
 }
 
+
+.message-content p{font-size: 15px;
+    line-height: 21px;
+    color: #4b4b4b;}
+	
+	
+	.email-wrapper .message-body .attachments-sections ul li .thumb {
+    display: inline-block;
+    margin-right: 10px;
+    margin: 0;
+    text-align: center;
+      height: 90px;     display: flex;
+    width: 100%;
+} 
+
+.details_a{       
+    background: #f3f8fb;
+    padding: 8px;     color: #868b8e;}
+.details_a p { margin:0; padding: 0 36px 0 19px; position:relative;     color: #868b8e;     line-height: 20px;}
+.details_a p .fa{ position:absolute;}
+
+.details_a .fa-paperclip {     left: 0;
+    color: #aeaeae;
+    top: 4px;}
+
+.details_a .fa-cloud-download { right:0;   
+    background: #7bc963;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px; cursor:pointer;}
+	
+	.details_a p span{     display: inline-block;
+    max-width: 95px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
+	
+	.thumb img{    max-width: 100%;
+    max-height: 90px;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+	.thumb {  text-align:center;}
+
+.modl_sm .modal-title {    margin-bottom: 15px;
+    font-size: 23px;     padding-top: 15px;}
+	
+	.btn-group-sm>.btn, .btn-sm {
+    padding: 8px 17px;
+	}
+	
+	.tbc .modal-title {    margin-bottom: 15px;
+    font-size: 23px; }
+	
+	.close span{position: absolute;
+    right: 9px;
+    top: 5px;
+    padding: 0;
+    outline: none;}
+	.modal-header {    z-index: 99;}
+	.modal-header .close { outline:none !important;}
+	
+	.tbc {    padding: 16px 0 0 29px !important;}
+	.mdf button {     border-radius: 0 !important;
+    padding: 6px 10px;
+    min-width: 100px;
+    text-align: center;
+    outline: 0 !important; background:#0052c2 !important; border:0 !important;}
+	.mdf button.btn-info{ background:#e91842 !important;}
+	.pt20 { padding-top:20px;}
 
 @media (max-width: 769px) {
 
