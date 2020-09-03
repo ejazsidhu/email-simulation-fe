@@ -44,6 +44,34 @@ body{ overflow-x: hidden;}
     display: inline-block;
     margin: 0 5px 0 10px; }
 	
+	.scr input[type=text]{    border: 1px solid #d9d9d9;
+    height: 35px;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 220px;
+    padding: 3px 25px 3px 3px;}
+	.scr { position:relative;}
+	.scr .fa{     position: absolute;
+    right: 24px;
+    top: 9px; color:#d9d9d9;}
+	.pdf_ic .fa:hover{color:#2ea58f; cursor:pointer;}
+	.table_cls .fa{ cursor:pointer;}
+	.bred {    position: relative;
+    top: -16px;}
+	.bred span{ font-size:14px; color:#797d80;}
+	.table_clsr th{font-weight:400; white-space: nowrap; background:#8c99a1; color:#fff; font-size:14px; text-align:center; padding:5px;}
+	.table_clsr td{ vertical-align:top; font-size:14px; padding:5px; text-align:center;} 
+	.table_clsr td:last-child{ text-align:left; max-width:250px}
+	.table_clsr table{    width: 100%;}
+	.table_clsr { overflow:auto;}
+	.table_clsr tr:nth-child(even) {background: #FFF}
+	
+	.table_clsr table {
+    border-collapse: collapse
+}
+.table_clsr td, .table_clsr th {
+    border: 1px solid #ddd
+}
 
 @media (max-width: 769px) {
   .email-wrapper .mail-sidebar {
@@ -610,4 +638,6 @@ font-size: 30px;
 
 .email-wrapper .message-body .message-content {
   padding: 20px 15px !important;
+}
+
 }
