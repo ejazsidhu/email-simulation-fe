@@ -110,21 +110,6 @@
           </ul>
       </nav>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-      </div>
-
-      <script>
-        $('#navId a').click(e => {
-          e.preventDefault();
-          $(this).tab('show');
-        });
-      </script>
     </div>
   </div>
 
@@ -202,7 +187,7 @@
                  
                   <td class="w-5 pdf_ic">
                     <span class="b1" data-toggle="tooltip" data-placement="top" title="download PDF">
-                      <i class="fa fa-file-pdf-o" data-toggle="modal"></i>
+                      <i class="fa fa-file-pdf-o" data-toggle="modal" data-target="#pdfview"></i>
                     </span>
 
                   </td>
@@ -408,8 +393,96 @@
         </div>
       </div>
     </div>
-       <!-- add email modal -->
-       
+       <!-- PDF -->
+       <div class="modal fade reply_pop" id="pdfview" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title mtitle" id="deleteModalLongTitle">Subject: Email Testing</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             <div class="email_p">
+                <img src="img/face11.jpg">
+                 <label>Peri Li <br> 06:30  2017</label>
+             </div>
+             <div class="mbody">
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             </p>
+             <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+             
+             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+             </div>
+             
+             
+             <div class="msg_reply">
+               <p class="mto"><span>To</span><input type="text"></p>
+                 <p class="mto"><span>Subject</span><input type="text"></p>
+                 <div class="reply_text">
+                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             </p>
+             
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+             </p>
+             
+             </div>
+             
+             <div class="reply_s2">
+                       <span class="fls"><i class="fa fa-paperclip"></i> File</span> 
+                       
+                       
+                       <ul>
+                       <li>
+                        <div class="thumb"><i class="fa fa-file-text"></i></div>
+                        <div class="details_a">
+                         
+                          <div class="buttons">
+                           
+                           <p><i class="fa fa-paperclip"></i> <span>filename.pdf</span>   <i class="fa fa-cloud-download"></i> </p>
+                           <span>142KB</span>  
+                           
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb"><i class="fa fa-file-text"></i></div>
+                        <div class="details_a">
+                         
+                          <div class="buttons">
+                           
+                           <p><i class="fa fa-paperclip"></i> <span>filename.pdf</span>   <i class="fa fa-cloud-download"></i> </p>
+                           <span>142KB</span>  
+                           
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="thumb"><i class="fa fa-file-text"></i></div>
+                        <div class="details_a">
+                         
+                          <div class="buttons">
+                           
+                           <p><i class="fa fa-paperclip"></i> <span>filename.pdf</span>   <i class="fa fa-cloud-download"></i> </p>
+                           <span>142KB</span>  
+                           
+                          </div>
+                        </div>
+                      </li>
+                       </ul>
+                       
+                       
+                     </div>
+             
+             </div>
+             
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
   </div>
   <!-- /#wrapper -->

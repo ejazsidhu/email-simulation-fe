@@ -72,6 +72,109 @@ body{ overflow-x: hidden;}
 .table_clsr td, .table_clsr th {
     border: 1px solid #ddd
 }
+.open_nav { display:none;}
+.mtitle{    padding: 7px 0 0 22px !important;}
+
+.email_p {position: relative;
+    padding-left: 65px;
+    border-top: 1px solid #ddd;
+    margin-top: 13px;
+    padding: 14px 0 10px 60px;}
+.email_p img{ position:absolute; left:0; width:45px; height:45px; border-radius:50%;}
+.email_p label{ line-height: 24px;
+    margin: 0;}
+	.reply_pop p{     color: #979797;
+    font-size: 15px;
+    margin-bottom: 16px;}
+.msg_reply { border:1px solid #ddd; margin-bottom:40px; border-radius:6px;}
+.mto{    margin: 0 !important;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;     }
+.mto span{ display:inline-block; width:70px;}
+.mto input[type=text]{ border:0; outline:none !important; width: calc(100% - 70px);}
+.reply_text { padding:15px;}
+
+.reply_s2 {
+   margin: 0px; 
+  
+border-top: 1px solid #ddd;     display: flex;
+  
+}
+	
+	.reply_s2 ul{ list-style:none; padding: 0 0 0 10px;}
+	
+	.reply_s2 span.fls{   border-right: 1px solid #ddd;
+    padding: 10px;
+    height: 43px;
+    display: flex;
+    height: auto;}
+	
+	.reply_s2 ul li {    margin:10px 10px 0px 0;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    width: 170px;
+    display: inline-block;}
+	.reply_s2 ul li .thumb {
+    display: inline-block;
+    margin-right: 10px;
+    margin: 0;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    width: 100%;
+}
+ .reply_s2 ul li .thumb i {
+    font-size: 30px;
+    margin: 0;
+    color: #2e383e;
+    padding: 0 !important;
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+	
+
+@media (max-width:991px) {
+
+
+#sidebar-wrapper{    min-height: auto;
+    margin-left: 0;}
+	
+	#wrapper.d-flex {
+   
+    display: block !important;
+}
+#sidebar-wrapper .list-group {
+    width: 100%;
+}
+
+.navbar-nav {
+    flex-direction: inherit !important;
+    padding-right: 44px;
+}
+
+.open_nav{     font-size: 20px;
+    display: block;
+    position: absolute;
+    z-index: 99999999;
+    right:20px;
+    top: 14px;
+    color: #fff;}
+	#sidebar-wrapper{ display:none;}
+	.nav-row { margin:0;}
+	.nav-row .col-12{ padding:0 !important;}
+	
+	.email-wrapper .mail-list-container .mail-list .content img {
+    position: absolute;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    left: 6px !important;
+    top: 0;
+}
+
+}
 
 @media (max-width: 769px) {
   .email-wrapper .mail-sidebar {
