@@ -21,7 +21,7 @@ body{ overflow-x: hidden;}
 
 .table_cls td{ padding:10px;}
 
-.table_cls td span.b1{ border-left: 1px solid #8a999e; display:block;}
+.table_cls td span.b1{ border-left: 1px solid #8a999e; display:block; ;padding-left: 15px !important;}
 
 .table_cls .btn-danger { background:#e91842 !important; border-radius:0; border:0 !important; border: 0 !important;
     padding: 2px 10px 3px 10px;
@@ -32,8 +32,8 @@ body{ overflow-x: hidden;}
     padding: 2px 10px 3px 10px;
     text-transform: capitalize;     min-width: 80px;
     text-align: center;}
-	html,body{ min-height:100%;}
-	.loginpage{ background:url(../img/login.jpg) no-repeat center center; background-size:cover; min-height:100%;}
+	html,body{ min-height:100%; ;height: 100%;}
+	.loginpage{ background:url(../img/login.jpg) no-repeat center center; background-size:cover; min-height:100%;;padding-top: 100px;}
 	
 	#login-row {background-color: rgba(255,255,255, 0.9);
     max-width: 400px;
