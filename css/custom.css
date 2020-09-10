@@ -135,6 +135,12 @@ border-top: 1px solid #ddd;     display: flex;
 }
 	
 
+#sidebar-wrapper {
+  
+    margin: 0 !important;
+}
+#page-content-wrapper .align-items-stretch{ margin:0;}
+
 @media (max-width:991px) {
 
 
@@ -736,6 +742,20 @@ font-size: 30px;
     outline: 0 !important; background:#0052c2 !important; border:0 !important;}
 	.mdf button.btn-info{ background:#e91842 !important;}
 	.pt20 { padding-top:20px;}
+	.pt7 { padding-top:9px;}
+	
+	.reply_s3 {
+    margin: 0px;
+    border: 1px solid #ddd;
+    display: flex;
+    border-top: 0;
+}
+
+.reply_s3 ul li .thumb { height:40px;}
+.reply_s3 ul li .thumb i { font-size:18px;}
+.reply_s3 ul li { width:140px;}
+.reply_s3 .details_a p { line-height:16px;}
+.reply_s3 .details_a { padding-bottom:4px;}
 
 @media (max-width: 769px) {
 
