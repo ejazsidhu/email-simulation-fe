@@ -756,6 +756,10 @@ font-size: 30px;
 .reply_s3 ul li { width:100px;}
 .reply_s3 .details_a p { line-height:16px;}
 .reply_s3 .details_a { padding-bottom:4px;}
+.re_pass{ background:#29a88b; padding:10px; border-radius:6px; margin-top:20px; color:#fff; text-align:center; font-size:20px;}
+.re_pass a { display:block; color:#fff; text-decoration:underline;}
+.re_pass2 { background:#e91842; padding:10px; border-radius:6px; margin-top:20px; color:#fff; text-align:center; font-size:14px;}
+
 
 @media (max-width: 769px) {
 
