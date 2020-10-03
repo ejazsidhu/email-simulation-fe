@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- Custom styles for this template -->
+  <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+   <link href="css/simple-sidebar.css" rel="stylesheet">
+     <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="row nav-row">
+    <div class="col-12">
+      <!-- Nav tabs -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Admin panel</a>
+        
+      <ul class="navbar-nav ml-auto top_right">
+
+      
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1 mt10">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in w300" aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fa fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+          
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                <img class="img-profile rounded-circle" src="img/img.png" width="30">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fa fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+      </nav>
+
+    <div class="open_nav">
+       <i class="fa fa-bars"> </i>
+    </div>
+      
+
+    </div>
+  </div>
+
+  <div class="d-flex bg-white" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <!-- <div class="sidebar-heading">Start Bootstrap </div> -->
+      <div class="list-group list-group-flush">
+       
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          Inbox</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-user-secret" aria-hidden="true"></i>
+          Drfat</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-users" aria-hidden="true"></i>
+          Sent item</a>
+       
+        <a href="#" class="list-group-item list-group-item-action bg-light">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>
+          Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+     <div class="content-wrapper">
+          <div class="email-wrapper wrapper">
+            <div class="row align-items-stretch">
+              
+              <div class="mail-list-container col-md-3 pt-4 pb-4 border-right bg-white custom-scrollbar-css par_sc">
+                
+                <div class="mail-list">
+                  
+                  <div class="content">
+                    <img src="img/img.png">
+                    <p class="sender-name">David Moore</p>
+                    <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Hi Emily, Please be informed that the new project presentation is due Monday.</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star-outline"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                   <img src="img/face11.jpg">
+                    <p class="sender-name">Microsoft</p>
+                      <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star favorite"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                    <img src="img/img.png">
+                    <p class="sender-name">David Moore</p>
+                    <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Hi Emily, Please be informed that the new project presentation is due Monday.</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star-outline"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                   <img src="img/face11.jpg">
+                    <p class="sender-name">Microsoft</p>
+                      <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star favorite"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                    <img src="img/img.png">
+                    <p class="sender-name">David Moore</p>
+                    <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Hi Emily, Please be informed that the new project presentation is due Monday.</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star-outline"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                   <img src="img/face11.jpg">
+                    <p class="sender-name">Microsoft</p>
+                      <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star favorite"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                    <img src="img/img.png">
+                    <p class="sender-name">David Moore</p>
+                    <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Hi Emily, Please be informed that the new project presentation is due Monday.</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star-outline"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                   <img src="img/face11.jpg">
+                    <p class="sender-name">Microsoft</p>
+                      <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star favorite"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                    <img src="img/img.png">
+                    <p class="sender-name">David Moore</p>
+                    <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Hi Emily, Please be informed that the new project presentation is due Monday.</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star-outline"></i>
+                  </div>
+                </div>
+                <div class="mail-list">
+                  
+                  <div class="content">
+                   <img src="img/face11.jpg">
+                    <p class="sender-name">Microsoft</p>
+                      <p class="subject_ms">Change Passwore <span>6-30-2020, 8:25AM</span></p>
+                    <p class="message_text">Change the password for your Microsoft Account using the security code 35525</p>
+                  </div>
+                  <div class="details">
+                    <i class="mdi mdi-star favorite"></i>
+                  </div>
+                </div>
+                
+
+                
+                
+                
+          
+                
+              </div>
+              <div class="mail-view d-md-block col-md-9 col-lg-7 bg-white custom-scrollbar-css par_sc">
+                <div class="row rw_par">
+                  
+                     <div class="col-12 par_res">
+                        <h2>Participant 1 Response</h2>  <span> <img src="img/pdf_icon.jpg"> </span>
+                     </div>
+                     
+                     <div class="subject_d2 col-12"><b>Top:</b> <span>herej</span></div>
+                      <div class="subject_d2 col-12"><b>Subject:</b> Hello here</div>
+                
+                </div>
+                <div class="message-body">
+                  <div class="sender-details">
+                    <img class="img-sm rounded-circle mr-3" src="http://www.urbanui.com/dashflat/template/images/faces/face11.jpg" alt="">
+                    <div class="details">
+                      <p class="msg-subject">
+                        Peri Li <br>
+                        May 8 2017
+                      </p>
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="message-content">
+                   
+                    <p>Hi Emily,</p>
+                   
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                      It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                      </p>
+                     
+                     <p><br>Regards,<br>Sarah Graves</p>
+                  </div>
+                  
+                </div>
+                
+                <div class="row rw_par">
+                  
+                     <div class="col-12 par_res">
+                        <h2>Participant 2 Response</h2>  
+                     </div>
+                     
+                     <div class="w_res">Waiting for Participant 2 Response</div>
+                     
+                     
+                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  <!-- add Participant Modal -->
+  <div class="modal fade custom-modal" id="addParticipant" tabindex="-1" role="dialog"
+  aria-labelledby="addAssessorTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+    <div class="modal-content modal-sm">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col ">
+            <h5 class="modal-title" id="exampleModalLongTitle">Add Participant</h5>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form>
+
+              <div class="form-group">
+                <label for="name">Participant's Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Participant's Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small> -->
+              </div>
+              <label for="email">Password</label>
+
+              <div class="input-group mb-3">
+
+                <input type="password" class="form-control" name="password"
+                  aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="input-btn"><i class="fa fa-refresh" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-12">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- delete modal -->
+
+    <div class="modal fade" id="deleteModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="    padding: 1rem 2rem !important;">
+            <h5 class="modal-title" id="deleteModalLongTitle">Delete item</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mt-2 mb-2">
+                <strong>
+                  Do you want to delte this item?
+                </strong>
+                <br>
+                <small>
+                  *Note:Deleting this entry will remove this reffernce from all over app.
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-12">
+                <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger btn-sm">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- email sent  notification modal -->
+    <div class="modal fade" id="emailNotificationCenter" tabindex="-1" role="dialog"
+      aria-labelledby="emailNotificationCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 text-center">
+                <i class="fa fa-check-circle fa-3x " style="color:#28a745" aria-hidden="true"></i>
+              </div>
+              <div class="col-12 text-center">
+                <p>
+                  <strong>
+                    Email sent successfully!
+                  </strong>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="vendor/scroll/scroll.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+  
+  
+  
+   $(".open_nav").click(function (e) {
+     
+      $("#sidebar-wrapper").toggle(400);
+    });
+	
+  
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+	
+	
+	$(function() {
+  /* Rounded Dots Dark */
+  $("#content-1").mCustomScrollbar({
+    theme: "rounded-dots-dark"
+  });
+
+  /* Rounded Dark */
+  $("#content-2").mCustomScrollbar({
+    theme: "rounded-dark"
+  });
+
+  /* Inset Dark */
+  $("#content-3").mCustomScrollbar({
+    theme: "inset-3-dark"
+  });
+
+  /* 3d Dark */
+  $("#content-4").mCustomScrollbar({
+    theme: "3d-dark"
+  });
+
+  /* Dark Thin */
+  $("#content-5").mCustomScrollbar({
+    theme: "dark-thin"
+  });
+});
+
+  </script>
+
+</body>
+
+</html>
